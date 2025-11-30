@@ -107,7 +107,7 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
                 <div className="flex items-center text-slate-500 text-sm font-medium mb-2">
                   <Calendar className="w-4 h-4 mr-2" />
                   <span className="text-slate-600">
-                    {new Date(event.date).toLocaleDateString('zh-HK', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
+                    {new Date(event.date).toLocaleDateString('zh-HK', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </span>
                 </div>
                 {event.description && (

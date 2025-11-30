@@ -145,7 +145,7 @@ export default function SubmitPage() {
               <div>
                 <label className="block text-sm font-medium text-slate-700 mb-1">發生日期</label>
                 <input 
-                  type="datetime-local"
+                  type="date"
                   name="eventDate" 
                   required 
                   className="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -239,7 +239,7 @@ export default function SubmitPage() {
             <button 
               type="submit" 
               disabled={loading}
-              className="w-full bg-slate-900 text-white py-3 px-4 rounded-lg hover:bg-slate-800 transition-colors disabled:opacity-50 font-medium"
+              className="w-full bg-red-600 text-white py-3 px-4 rounded-lg hover:bg-red-500 transition-all shadow-md hover:shadow-lg disabled:opacity-50 font-bold text-lg"
             >
               {loading ? '提交中...' : '提交審核'}
             </button>
